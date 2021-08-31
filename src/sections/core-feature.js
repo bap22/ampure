@@ -35,7 +35,7 @@ const data = {
 
 export default function CoreFeature() {
     return (
-        <section sx={styles.coreFeature}>
+        <section sx={styles.coreFeature} id="different">
             <Container sx={styles.containerBox}>
                 <Box sx={styles.thumbnail}>
                     <Image

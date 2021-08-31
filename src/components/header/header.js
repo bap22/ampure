@@ -8,8 +8,14 @@ import Logo from 'components/logo';
 import { DrawerProvider } from '../../contexts/drawer/drawer.provider';
 import MobileDrawer from './mobile-drawer';
 import menuItems from './header.data';
+import { FaUnderline } from 'react-icons/fa';
+
+import { useRouter } from 'next/router';
 
 export default function Header({ className }) {
+    const router = useRouter();
+    console.warn(router);
+
     return (
         <DrawerProvider>
             <header sx={styles.header} className={className} id="header">
@@ -23,20 +29,40 @@ export default function Header({ className }) {
                     />
 
                     <Flex as="nav" sx={styles.nav}>
-                        {menuItems.map(({ path, label }, i) => (
-                            <ScrollLink
-                                activeClass="active"
-                                to={path}
-                                spy={true}
-                                smooth={true}
-                                offset={-70}
-                                duration={500}
-                                key={i}
-                            >
-                                {label}
-                            </ScrollLink>
-                        ))}
-                        <Link href="about">About</Link>
+                        {/* TODO: use this if on homepage, else use Link */}
+                        {router?.pathname == '/' ? (
+                            menuItems.map(({ path, label }, i) => (
+                                <ScrollLink
+                                    activeClass="active"
+                                    to={path}
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-70}
+                                    duration={500}
+                                    key={i}
+                                >
+                                    {label}
+                                </ScrollLink>
+                            ))
+                        ) : (
+                            <Link href="/">Home</Link>
+                        )}
+                        <a
+                            href="/about"
+                            className={
+                                router?.pathname == '/about' ? 'active' : ''
+                            }
+                        >
+                            About
+                        </a>
+                        <a
+                            href="/contact"
+                            className={
+                                router?.pathname == '/contact' ? 'active' : ''
+                            }
+                        >
+                            Contact
+                        </a>
                     </Flex>
 
                     <Button
@@ -89,7 +115,7 @@ const styles = {
             color: '#000000',
             boxShadow: '0 1px 2px rgba(0, 0, 0, 0.06)',
             py: 3,
-            'nev > a': {
+            'nav > a': {
                 color: 'text',
             },
             '.donate__btn': {
@@ -123,6 +149,8 @@ const styles = {
             '&.active': {
                 color: 'secondary',
             },
+            color: 'white',
+            textDecoration: 'none',
         },
     },
 };

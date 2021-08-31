@@ -30,10 +30,10 @@ const data = [
 export default function WorkFlow() {
     return (
         <section sx={styles.workflow}>
-            <Container>
+            <Container style={{ marginTop: '48px' }}>
                 <SectionHeader
-                    slogan="Whats the function"
-                    title="Let’s see how it works"
+                    slogan="Expertise"
+                    title="Why our agency outshines the rest"
                     isWhite={true}
                 />
 

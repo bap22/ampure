@@ -4,7 +4,7 @@ export default [
         label: 'What we do',
     },
     {
-        path: 'key-feature',
+        path: 'different',
         label: "How we're different",
     },
     {
