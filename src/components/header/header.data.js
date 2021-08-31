@@ -1,15 +1,15 @@
 export default [
     {
         path: 'feature',
-        label: 'Websites',
+        label: 'What we do',
     },
     {
         path: 'testimonial',
-        label: 'Patients',
+        label: "How we're different",
     },
     {
         path: 'pricing',
-        label: 'Analytics',
+        label: 'Results',
     },
     {
         path: '/about',

@@ -5,22 +5,30 @@ import TextFeature from 'components/text-feature';
 import Image from 'next/image';
 
 const data = {
-    subTitle: 'Core features',
-    title: 'Smart Jackpots that you may love this anytime & anywhere',
+    subTitle:
+        'Why is Ampure different from every other dental marketing company out there?',
+    title: 'Results, visibility and no long-term contracts',
     features: [
         {
             id: 1,
             imgSrc: '/assets/core-feature/briefcase.svg',
-            altText: 'Smart Features',
-            title: 'Smart Features',
-            text: 'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
+            altText: 'Results',
+            title: 'Results',
+            text: 'Our entire focus is on growing your local business. We don’t offer enterprise services or go after the “big fish” - we built our entire product and team from the ground up with dentists in mind. You face unique marketing challenges and we know we can provide the best systems and services to help you succeed. ',
         },
         {
             id: 2,
             imgSrc: '/assets/core-feature/secure.svg',
-            altText: 'Secure Contents',
-            title: 'Secure Contents',
-            text: 'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
+            altText: 'Visibility',
+            title: 'Visibility',
+            text: 'Rather than getting random ranking reports and “vanity” metrics about how many likes you have on Facebook - Ampure is dedicated to providing you data and analytics in a consumable format that will actually help you make better marketing decisions. Our data shows what is working and how it is impacting the number of new patients you’re getting every single day.',
+        },
+        {
+            id: 2,
+            imgSrc: '/assets/core-feature/secure.svg',
+            altText: 'Contracts',
+            title: 'No Long-term Contracts',
+            text: 'Our recurring services are all month-to-month. We care so much about you and your business, that we wouldn’t dream of committing you to a long-term contract. Multi-year commitments help everyone but the dental practice.',
         },
     ],
 };

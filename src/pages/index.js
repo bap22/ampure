@@ -29,11 +29,8 @@ const IndexPage = ({ bannerData }) => {
                     <CoreFeature />
                     <Feature />
                     <PartnerSection />
-                    <WorkFlow />
                     <TestimonialCard />
                     <SecurePayment />
-                    <Package />
-                    <Faq />
                 </Layout>
             </StickyProvider>
         </ThemeProvider>

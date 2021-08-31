@@ -18,7 +18,7 @@ const data = [
         imgSrc: '/assets/key-feature/editing.svg',
         altText: 'Patients',
         title: 'Get more patients',
-        text: 'Our proprietary marketing tools and services are built to handle your most important online efforts so more people in your geographic area start finding your business. Not only will you start getting more Google Reviews, but our service also ensures you’ll get the best ranking benefits from each and every one  - more so than any other service we’ve ever seen.We also manage your ongoing SEO keyword efforts to make sure each of your services ranks when people in your community are looking for the specific dental solutions you provide (i.e. teeth cleaning in Portland Oregon).',
+        text: 'Our proprietary marketing tools and services are built to handle your most important online efforts so more people in your geographic area start finding your business. Not only will you start getting more Google Reviews, but our service also ensures you’ll get the best ranking benefits from each and every one  - more so than any other service we’ve ever seen. We also manage your ongoing SEO keyword efforts to make sure each of your services ranks when people in your community are looking for the specific dental solutions you provide (i.e. teeth cleaning in Portland Oregon).',
     },
     {
         id: 3,
@@ -34,7 +34,7 @@ export default function KeyFeature() {
         <section sx={{ variant: 'section.keyFeature' }} id="feature">
             <Container>
                 <SectionHeader
-                    slogan="How"
+                    slogan="Marketing with Results"
                     title="What we will do for your Dental Practice"
                 />
 
