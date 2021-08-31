@@ -45,7 +45,7 @@ export default IndexPage;
 export const getStaticProps = async () => {
     const data = await getPage('homepage-banner');
 
-    console.warn(data);
+    // console.warn(data);
     return {
         props: {
             bannerData: data?.page ? data.page : {},
