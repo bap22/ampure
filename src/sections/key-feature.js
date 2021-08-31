@@ -9,23 +9,23 @@ const data = [
     {
         id: 1,
         imgSrc: '/assets/key-feature/vector.svg',
-        altText: 'Vector',
-        title: 'Vector Editing',
-        text: 'Get your blood tests delivered at home collect a sample from the your blood tests.',
+        altText: 'Website',
+        title: 'Build your website',
+        text: 'Work with our talented team to build a dental website that is perfectly optimized towards building your Google presence in a way that will actually bring in new patients. You don’t have to know about things like Schema markup, silos, or keyword density - we take care of all that for you. You own your site. We will help you build it, but should you ever choose to leave our services, your site is entirely yours and built with the newest and most widely used technologies available.',
     },
     {
         id: 2,
         imgSrc: '/assets/key-feature/editing.svg',
-        altText: 'Monitoring',
-        title: 'Customize & Monitoring',
-        text: 'Get your blood tests delivered at home collect a sample from the your blood tests.',
+        altText: 'Patients',
+        title: 'Get more patients',
+        text: 'Our proprietary marketing tools and services are built to handle your most important online efforts so more people in your geographic area start finding your business. Not only will you start getting more Google Reviews, but our service also ensures you’ll get the best ranking benefits from each and every one  - more so than any other service we’ve ever seen.We also manage your ongoing SEO keyword efforts to make sure each of your services ranks when people in your community are looking for the specific dental solutions you provide (i.e. teeth cleaning in Portland Oregon).',
     },
     {
         id: 3,
         imgSrc: '/assets/key-feature/speed.svg',
-        altText: 'Quality',
-        title: 'Quality & Short-period',
-        text: 'Get your blood tests delivered at home collect a sample from the your blood tests.',
+        altText: 'Results',
+        title: 'Measure your results',
+        text: 'See all of your website data and rankings in a simple dashboard so you don’t have to learn complex analytics tools and manage dozens of spreadsheets. Our dashboard highlights important data while surfacing actionable opportunities. Our dashboard and reporting are growing all the time, so you get more and more insights and visibility into your marketing efforts.',
     },
 ];
 
@@ -34,8 +34,8 @@ export default function KeyFeature() {
         <section sx={{ variant: 'section.keyFeature' }} id="feature">
             <Container>
                 <SectionHeader
-                    slogan="Quality features"
-                    title="Meet exciting feature of app"
+                    slogan="How"
+                    title="What we will do for your Dental Practice"
                 />
 
                 <Grid sx={styles.grid}>

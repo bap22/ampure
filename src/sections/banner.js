@@ -54,9 +54,16 @@ export default function Banner(props) {
                         simplify and grow your practice.
                     </Text>
                     <Flex>
-                        <Button variant="whiteButton" aria-label="Get Started">
-                            See how it works
-                        </Button>
+                        <Link href="#feature">
+                            {' '}
+                            <Button
+                                variant="whiteButton"
+                                aria-label="Get Started"
+                            >
+                                See how it works
+                            </Button>
+                        </Link>
+
                         <>
                             {/* <ModalVideo
                 channel="youtube"
@@ -73,7 +80,7 @@ export default function Banner(props) {
                             </Button>
                         </>
                     </Flex>
-                    <Flex sx={styles.sponsorBox}>
+                    {/* <Flex sx={styles.sponsorBox}>
                         <Text sx={styles.sponsorTitle}>Integrated With:</Text>
                         <Box sx={styles.sponsorBox.sponsor}>
                             {data.map((item, index) => (
@@ -90,7 +97,7 @@ export default function Banner(props) {
                                 </Link>
                             ))}
                         </Box>
-                    </Flex>
+                    </Flex> */}
                 </Box>
 
                 <Box sx={styles.banner.imageBox}>
