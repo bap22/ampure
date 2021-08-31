@@ -16,7 +16,7 @@ export default function Header({ className }) {
                 <Container sx={styles.container}>
                     <Logo
                         src={className === 'sticky' ? LogoDark : LogoWhite}
-                        style={{ width: '300px', height: '88px' }}
+                        style={{ width: '150px', height: '44px' }}
                     />
 
                     <Flex as="nav" sx={styles.nav}>

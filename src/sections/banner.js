@@ -33,27 +33,27 @@ const data = [
     },
 ];
 
-export default function Banner() {
+export default function Banner(props) {
     const [videoOpen, setVideoOpen] = useState(false);
     const handleClick = (e) => {
         e.preventDefault();
         setVideoOpen(true);
     };
+
     return (
         <section sx={styles.banner} id="home">
             <Container sx={styles.banner.container}>
                 <Box sx={styles.banner.contentBox}>
                     <Heading as="h1" variant="heroPrimary">
-                        Experience your ultimate mobile application
+                        {props?.content?.content.replace(/<[^>]*>?/gm, '')}
                     </Heading>
                     <Text as="p" variant="heroSecondary">
-                        Get your blood tests delivered at let home collect
-                        sample from the victory of the managements that supplies
-                        best design system guidelines ever.
+                        Ampure is your all-in-one marketing hub to help you
+                        simplify and grow your practice.
                     </Text>
                     <Flex>
                         <Button variant="whiteButton" aria-label="Get Started">
-                            Get Started
+                            See how it works
                         </Button>
                         <>
                             {/* <ModalVideo
@@ -72,7 +72,7 @@ export default function Banner() {
                         </>
                     </Flex>
                     <Flex sx={styles.sponsorBox}>
-                        <Text sx={styles.sponsorTitle}>Sponsored by:</Text>
+                        <Text sx={styles.sponsorTitle}>Integrated With:</Text>
                         <Box sx={styles.sponsorBox.sponsor}>
                             {data.map((item, index) => (
                                 <Link

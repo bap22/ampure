@@ -15,24 +15,40 @@ import SecurePayment from 'sections/secure-payment';
 import Package from 'sections/package';
 import Faq from 'sections/faq';
 
-export default function IndexPage() {
-  return (
-    <ThemeProvider theme={theme}>
-      <StickyProvider>
-        <Layout>
-          <SEO title="Startup Landing 004" />
-          <Banner />
-          <KeyFeature />
-          <CoreFeature />
-          <Feature />
-          <PartnerSection />
-          <WorkFlow />
-          <TestimonialCard />
-          <SecurePayment />
-          <Package />
-          <Faq />
-        </Layout>
-      </StickyProvider>
-    </ThemeProvider>
-  );
-}
+// data
+import { getPage } from '../lib/api';
+
+const IndexPage = ({ bannerData }) => {
+    return (
+        <ThemeProvider theme={theme}>
+            <StickyProvider>
+                <Layout>
+                    <SEO title="Startup Landing 004" />
+                    <Banner content={bannerData} />
+                    <KeyFeature />
+                    <CoreFeature />
+                    <Feature />
+                    <PartnerSection />
+                    <WorkFlow />
+                    <TestimonialCard />
+                    <SecurePayment />
+                    <Package />
+                    <Faq />
+                </Layout>
+            </StickyProvider>
+        </ThemeProvider>
+    );
+};
+
+export default IndexPage;
+
+export const getStaticProps = async () => {
+    const data = await getPage('homepage-banner');
+
+    console.warn(data);
+    return {
+        props: {
+            bannerData: data?.page ? data.page : {},
+        },
+    };
+};
