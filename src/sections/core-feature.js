@@ -52,7 +52,8 @@ export default function CoreFeature() {
                                     src={item.imgSrc}
                                     alt={item.altText}
                                     sx={styles.img}
-                                    layout="fill"
+                                    width={57}
+                                    height={57}
                                 />
 
                                 <Box sx={styles.wrapper}>

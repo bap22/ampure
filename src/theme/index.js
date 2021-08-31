@@ -18,10 +18,12 @@ export default {
         modes: {
             dark: {
                 text: '#fff',
-                background: '#000',
-                primary: '#0cf',
-                secondary: '#09c',
-                muted: '#111',
+                background: '#02457A',
+                primary: '#001B48',
+                secondary: '#02457A',
+                muted: '#97cadb',
+                heading: '#e5ecf4', // primary heading color
+                heading_secondary: '#efefef', // heading color
             },
         },
     },
