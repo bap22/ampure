@@ -14,17 +14,17 @@ export default {
         accent: '#609', // a contrast color for emphasizing UI
         yellow: '#',
 
-        // highlight	a background color for highlighting text
+        // highlight a background color for highlighting text
         modes: {
-            dark: {
-                text: '#fff',
-                background: '#02457A',
-                primary: '#001B48',
-                secondary: '#02457A',
-                muted: '#97cadb',
-                heading: '#e5ecf4', // primary heading color
-                heading_secondary: '#efefef', // heading color
-            },
+            // dark: {
+            //     text: '#fff',
+            //     background: '#02457A',
+            //     primary: '#001B48',
+            //     secondary: '#02457A',
+            //     muted: '#97cadb',
+            //     heading: '#e5ecf4', // primary heading color
+            //     heading_secondary: '#efefef', // heading color
+            // },
         },
     },
     breakpoints: [
