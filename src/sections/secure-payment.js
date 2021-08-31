@@ -3,10 +3,7 @@
 import { jsx } from 'theme-ui';
 import { Container, Box } from 'theme-ui';
 import TextFeature from 'components/text-feature';
-import Image from 'components/image';
-
-import PaymentThumb from 'assets/paymentThumb.png';
-import PaymentPattern from 'assets/payment-pattern.png';
+import Image from 'next/image';
 
 const data = {
     subTitle: 'PAYMENT SECURITY',
@@ -23,7 +20,12 @@ export default function SecurePayment() {
             <Box sx={styles.bgOverlay} />
             <Container sx={styles.containerBox}>
                 <Box sx={styles.thumbnail}>
-                    <Image src={PaymentThumb} alt={data.title} />
+                    <Image
+                        src="/assets/paymentThumb.png"
+                        alt={data.title}
+                        width={743}
+                        height={820}
+                    />
                 </Box>
                 <Box sx={styles.contentBox}>
                     <TextFeature
@@ -56,7 +58,7 @@ const styles = {
             null,
             'calc(50% + 625px)',
         ],
-        backgroundImage: `url(${PaymentPattern})`,
+        backgroundImage: `url('/assets/payment-pattern.png')`,
         backgroundRepeat: `no-repeat`,
         backgroundPosition: 'top left',
         backgroundSize: 'cover',

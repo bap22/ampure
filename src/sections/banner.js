@@ -1,36 +1,37 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
-import { Container, Flex, Box, Heading, Text, Image, Button } from 'theme-ui';
+import { Container, Flex, Box, Heading, Text, Button } from 'theme-ui';
+import Image from 'next/image';
 import React, { useState } from 'react';
 // import ModalVideo from 'react-modal-video';
 import { Link } from 'components/link';
 import { FaPlayCircle } from 'react-icons/fa';
-import BannerBG from 'assets/bannerBg.png';
-import BannerThumb from 'assets/banner-thumb.png';
-
-import client1 from 'assets/sponsor/paypal.svg';
-import client2 from 'assets/sponsor/google.svg';
-import client3 from 'assets/sponsor/dropbox.svg';
 
 const data = [
     {
         id: 1,
         path: '#',
-        image: client1,
+        image: '/assets/sponsor/paypal.svg',
         title: 'paypal',
+        height: 28,
+        width: 100,
     },
     {
         id: 2,
         path: '#',
-        image: client2,
+        image: '/assets/sponsor/google.svg',
         title: 'google',
+        height: 28,
+        width: 85,
     },
     {
         id: 3,
         path: '#',
-        image: client3,
+        image: '/assets/sponsor/dropbox.svg',
         title: 'dropbox',
+        height: 24,
+        width: 123,
     },
 ];
 
@@ -80,7 +81,12 @@ export default function Banner(props) {
                                     path={item.path}
                                     key={`client-key${index}`}
                                 >
-                                    <Image src={item.image} alt={item.title} />
+                                    <Image
+                                        src={item.image}
+                                        alt={item.title}
+                                        height={item.height}
+                                        width={item.width}
+                                    />
                                 </Link>
                             ))}
                         </Box>
@@ -88,7 +94,12 @@ export default function Banner(props) {
                 </Box>
 
                 <Box sx={styles.banner.imageBox}>
-                    <Image src={BannerThumb} alt="banner" />
+                    <Image
+                        src="/assets/banner-thumb.png"
+                        alt="banner"
+                        height={796}
+                        width={1126}
+                    />
                 </Box>
             </Container>
         </section>
@@ -98,7 +109,7 @@ export default function Banner(props) {
 const styles = {
     banner: {
         overflow: ['hidden', 'initial', null, 'hidden'],
-        backgroundImage: `url(${BannerBG})`,
+        backgroundImage: `url(assets/bannerBg.png)`,
         backgroundRepeat: `no-repeat`,
         backgroundPosition: 'top left',
         backgroundSize: 'cover',

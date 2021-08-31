@@ -23,7 +23,7 @@ const IndexPage = ({ bannerData }) => {
         <ThemeProvider theme={theme}>
             <StickyProvider>
                 <Layout>
-                    <SEO title="Startup Landing 004" />
+                    <SEO title="Ampure. Pure SEO for Dental Practices" />
                     <Banner content={bannerData} />
                     <KeyFeature />
                     <CoreFeature />

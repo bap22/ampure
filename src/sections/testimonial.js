@@ -1,15 +1,11 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx, Container, Heading, Text, Box, Image } from 'theme-ui';
+import { jsx, Container, Heading, Text, Box } from 'theme-ui';
+import Image from 'next/image';
 import SectionHeader from 'components/section-header';
 import Rating from 'components/rating';
 import ButtonGroup from 'components/button-group';
 import Carousel from 'react-multi-carousel';
-
-import Avatar1 from 'assets/testimonial/avatar1.png';
-import Avatar2 from 'assets/testimonial/avatar2.png';
-import Avatar3 from 'assets/testimonial/avatar3.png';
-import Avatar4 from 'assets/testimonial/avatar4.png';
 
 const data = [
     {
@@ -17,7 +13,7 @@ const data = [
         title: 'Modern look & trending design',
         description:
             'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
-        avatar: Avatar1,
+        avatar: '/assets/testimonial/avatar1.png',
         name: 'Denny Hilguston',
         designation: '@denny.hil',
         review: 4,
@@ -27,7 +23,7 @@ const data = [
         title: 'Design Quality & performance',
         description:
             'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
-        avatar: Avatar2,
+        avatar: '/assets/testimonial/avatar2.png',
         name: 'Denny Hilguston',
         designation: '@denny.hil',
         review: 5,
@@ -37,7 +33,7 @@ const data = [
         title: 'Layout and organized layers',
         description:
             'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
-        avatar: Avatar3,
+        avatar: '/assets/testimonial/avatar3.png',
         name: 'Denny Hilguston',
         designation: '@denny.hil',
         review: 5,
@@ -47,7 +43,7 @@ const data = [
         title: 'Modern look & trending design',
         description:
             'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
-        avatar: Avatar4,
+        avatar: '/assets/testimonial/avatar4.png',
         name: 'Denny Hilguston',
         designation: '@denny.hil',
         review: 4,
@@ -126,6 +122,8 @@ export default function TestimonialCard() {
                                     <Image
                                         src={item.avatar}
                                         alt="Client Image"
+                                        width={55}
+                                        height={55}
                                     />
                                 </div>
                                 <div className="reviewer-info">

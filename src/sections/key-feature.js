@@ -4,28 +4,25 @@ import { jsx } from 'theme-ui';
 import { Container, Grid } from 'theme-ui';
 import SectionHeader from '../components/section-header';
 import FeatureCardColumn from 'components/feature-card-column.js';
-import Vector from 'assets/key-feature/vector.svg';
-import Editing from 'assets/key-feature/editing.svg';
-import Speed from 'assets/key-feature/speed.svg';
 
 const data = [
     {
         id: 1,
-        imgSrc: Vector,
+        imgSrc: '/assets/key-feature/vector.svg',
         altText: 'Vector',
         title: 'Vector Editing',
         text: 'Get your blood tests delivered at home collect a sample from the your blood tests.',
     },
     {
         id: 2,
-        imgSrc: Editing,
+        imgSrc: '/assets/key-feature/editing.svg',
         altText: 'Monitoring',
         title: 'Customize & Monitoring',
         text: 'Get your blood tests delivered at home collect a sample from the your blood tests.',
     },
     {
         id: 3,
-        imgSrc: Speed,
+        imgSrc: '/assets/key-feature/speed.svg',
         altText: 'Quality',
         title: 'Quality & Short-period',
         text: 'Get your blood tests delivered at home collect a sample from the your blood tests.',

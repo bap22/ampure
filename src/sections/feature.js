@@ -4,52 +4,46 @@ import { jsx } from 'theme-ui';
 import { Container, Grid } from 'theme-ui';
 import SectionHeader from 'components/section-header';
 import FeatureCard from 'components/feature-card.js';
-import Smart from 'assets/feature/smart.svg';
-import Winner from 'assets/feature/winner.svg';
-import Cloud from 'assets/feature/cloud.svg';
-import Setting from 'assets/feature/setting.svg';
-import Design from 'assets/feature/design.svg';
-import Chat from 'assets/feature/chat.svg';
 
 const data = [
     {
         id: 1,
-        imgSrc: Smart,
+        imgSrc: '/assets/feature/smart.svg',
         altText: 'Smart',
         title: 'Smart Features',
         text: 'Get your blood tests delivered at let home collect sample from the victory of the managements.',
     },
     {
         id: 2,
-        imgSrc: Winner,
+        imgSrc: '/assets/feature/winner.svg',
         altText: 'Performance',
         title: 'Fast Performance',
         text: 'Get your blood tests delivered at let home collect sample from the victory of the managements.',
     },
     {
         id: 3,
-        imgSrc: Cloud,
+        imgSrc: '/assets/feature/cloud.svg',
         altText: 'Content',
         title: 'Unlimited Content',
         text: 'Get your blood tests delivered at let home collect sample from the victory of the managements.',
     },
     {
         id: 4,
-        imgSrc: Setting,
+        imgSrc: '/assets/feature/setting.svg',
         altText: 'Customization',
         title: 'Unlimited Customization',
         text: 'Get your blood tests delivered at let home collect sample from the victory of the managements.',
     },
     {
         id: 5,
-        imgSrc: Design,
+        imgSrc: '/assets/feature/design.svg',
         altText: 'Productivity',
         title: 'Boost Productivity',
         text: 'Get your blood tests delivered at let home collect sample from the victory of the managements.',
     },
     {
         id: 6,
-        imgSrc: Chat,
+        imgSrc: '/assets/feature/chat.svg',
         altText: 'Support',
         title: 'Customer Support',
         text: 'Get your blood tests delivered at let home collect sample from the victory of the managements.',

@@ -2,11 +2,7 @@
 /** @jsx jsx */
 import { jsx, Container, Box, Grid, Text, Heading } from 'theme-ui';
 import TextFeature from 'components/text-feature';
-import Image from 'components/image';
-
-import CoreFeatureThumb from 'assets/coreFeature.png';
-import Briefcase from 'assets/core-feature/briefcase.svg';
-import Secure from 'assets/core-feature/secure.svg';
+import Image from 'next/image';
 
 const data = {
     subTitle: 'Core features',
@@ -14,14 +10,14 @@ const data = {
     features: [
         {
             id: 1,
-            imgSrc: Briefcase,
+            imgSrc: '/assets/core-feature/briefcase.svg',
             altText: 'Smart Features',
             title: 'Smart Features',
             text: 'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
         },
         {
             id: 2,
-            imgSrc: Secure,
+            imgSrc: '/assets/core-feature/secure.svg',
             altText: 'Secure Contents',
             title: 'Secure Contents',
             text: 'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
@@ -34,7 +30,12 @@ export default function CoreFeature() {
         <section sx={styles.coreFeature}>
             <Container sx={styles.containerBox}>
                 <Box sx={styles.thumbnail}>
-                    <Image src={CoreFeatureThumb} alt="Thumbnail" />
+                    <Image
+                        src="/assets/coreFeature.png"
+                        alt="Thumbnail"
+                        width={479}
+                        height={837}
+                    />
                 </Box>
                 <Box sx={styles.contentBox}>
                     <Box sx={styles.headingTop}>
@@ -51,6 +52,7 @@ export default function CoreFeature() {
                                     src={item.imgSrc}
                                     alt={item.altText}
                                     sx={styles.img}
+                                    layout="fill"
                                 />
 
                                 <Box sx={styles.wrapper}>

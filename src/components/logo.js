@@ -1,7 +1,8 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx, Image } from 'theme-ui';
+import { jsx } from 'theme-ui';
 import { Link } from 'components/link';
+import Image from 'next/image';
 
 export default function Logo({ src, ...rest }) {
     return (
@@ -15,7 +16,12 @@ export default function Logo({ src, ...rest }) {
             }}
             {...rest}
         >
-            <Image src={src} alt="startup landing logo" />
+            <Image
+                src={src}
+                alt="startup landing logo"
+                height={44}
+                width={150}
+            />
         </Link>
     );
 }

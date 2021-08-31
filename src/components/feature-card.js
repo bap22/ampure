@@ -10,7 +10,7 @@ export default function FeatureCard({
 }) {
     return (
         <Box sx={styles.card}>
-            <Image src={src} alt={altText} sx={styles.img} />
+            <Image src={src} alt={altText} sx={styles.img} layout="fill" />
 
             <Box sx={styles.wrapper}>
                 <Heading sx={styles.wrapper.title}>{title}</Heading>
