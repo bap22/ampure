@@ -2,8 +2,8 @@
 /** @jsx jsx */
 import { jsx, Container, Flex, Button } from 'theme-ui';
 import { keyframes } from '@emotion/react';
-import { Link } from 'react-scroll';
-import { Link as NavLink } from 'next/link';
+import { Link as ScrollLink } from 'react-scroll';
+import Link from 'next/link';
 import Logo from 'components/logo';
 import { DrawerProvider } from '../../contexts/drawer/drawer.provider';
 import MobileDrawer from './mobile-drawer';
@@ -24,7 +24,7 @@ export default function Header({ className }) {
 
                     <Flex as="nav" sx={styles.nav}>
                         {menuItems.map(({ path, label }, i) => (
-                            <Link
+                            <ScrollLink
                                 activeClass="active"
                                 to={path}
                                 spy={true}
@@ -34,9 +34,9 @@ export default function Header({ className }) {
                                 key={i}
                             >
                                 {label}
-                            </Link>
+                            </ScrollLink>
                         ))}
-                        <NavLink href="about">About</NavLink>
+                        <Link href="about">About</Link>
                     </Flex>
 
                     <Button
