@@ -3,6 +3,7 @@
 import { jsx, Container, Flex, Button } from 'theme-ui';
 import { keyframes } from '@emotion/react';
 import { Link } from 'react-scroll';
+import { Link as NavLink } from 'next/link';
 import Logo from 'components/logo';
 import { DrawerProvider } from '../../contexts/drawer/drawer.provider';
 import MobileDrawer from './mobile-drawer';
@@ -35,6 +36,7 @@ export default function Header({ className }) {
                                 {label}
                             </Link>
                         ))}
+                        <NavLink href="about">About</NavLink>
                     </Flex>
 
                     <Button

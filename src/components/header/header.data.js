@@ -4,19 +4,11 @@ export default [
         label: 'What we do',
     },
     {
-        path: 'testimonial',
+        path: 'key-feature',
         label: "How we're different",
     },
     {
-        path: 'pricing',
+        path: 'testimonial',
         label: 'Results',
-    },
-    {
-        path: '/about',
-        label: 'About Us',
-    },
-    {
-        path: '/contact',
-        label: 'Contact',
     },
 ];
