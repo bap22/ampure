@@ -11,7 +11,8 @@ import Faq from 'sections/faq';
 // data
 // import { getPage } from '../lib/api';
 
-const AboutPage = ({ bannerData }) => {
+// const AboutPage = ({ bannerData }) => {
+const AboutPage = () => {
     return (
         <ThemeProvider theme={theme}>
             <StickyProvider>
@@ -28,12 +29,13 @@ const AboutPage = ({ bannerData }) => {
 
 export default AboutPage;
 
-export const getStaticProps = async () => {
-    // const data = await getPage('homepage-banner');
-    // console.warn(data);
-    // return {
-    //     props: {
-    //         bannerData: data?.page ? data.page : {},
-    //     },
-    // };
-};
+// export const getStaticProps = async () => {
+//     const data = await getPage('homepage-banner');
+
+//     console.warn(data);
+//     return {
+//         props: {
+//             bannerData: data?.page ? data.page : {},
+//         },
+//     };
+// };
