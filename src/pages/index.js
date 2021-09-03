@@ -9,11 +9,8 @@ import KeyFeature from 'sections/key-feature';
 import CoreFeature from 'sections/core-feature';
 import Feature from 'sections/feature';
 import PartnerSection from 'sections/partner';
-import WorkFlow from 'sections/workflow';
 import TestimonialCard from 'sections/testimonial';
 import SecurePayment from 'sections/secure-payment';
-import Package from 'sections/package';
-import Faq from 'sections/faq';
 
 // data
 import { getPage } from '../lib/api';
@@ -40,9 +37,9 @@ const IndexPage = ({ bannerData }) => {
 export default IndexPage;
 
 export const getStaticProps = async () => {
-    const data = await getPage('homepage-banner');
+    const data = await getPage('homepage');
 
-    // console.warn(data);
+    console.warn(data);
     return {
         props: {
             bannerData: data?.page ? data.page : {},
