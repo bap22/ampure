@@ -21,7 +21,7 @@ const IndexPage = ({ bannerData }) => {
         <ThemeProvider theme={theme}>
             <StickyProvider>
                 <Layout>
-                    <SEO title="Ampure. Pure SEO for Dental Practices" />
+                    <SEO title="Amplify your dental practice marketing with Ampure" />
                     <Banner
                         h1={bannerData?.customFields?.h1}
                         content={bannerData?.customFields?.headerContent}
