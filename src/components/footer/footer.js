@@ -83,6 +83,7 @@ const styles = {
         },
         copyright: {
             fontSize: ['14px', null, 1],
+            display: 'block',
             width: '100%',
             textAlign: 'center',
             p: ['20px 20px'],

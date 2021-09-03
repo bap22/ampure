@@ -14,7 +14,13 @@ export default function FeatureCardColumn({
 
             <Box sx={styles.wrapper}>
                 <Heading sx={styles.wrapper.title}>{title}</Heading>
-                <Text sx={styles.wrapper.subTitle}>{text}</Text>
+                <Text sx={styles.wrapper.subTitle}>
+                    <div
+                        dangerouslySetInnerHTML={{
+                            __html: text,
+                        }}
+                    ></div>{' '}
+                </Text>
             </Box>
         </Box>
     );

@@ -5,46 +5,58 @@ import SectionHeader from 'components/section-header';
 import Accordion from 'components/accordion/accordion';
 const faqs = [
     {
-        title: 'How to contact with riders emergency ?',
+        title: 'Skate ipsum dolor sit amet?',
         contents: (
             <div>
-                Get your website ads tests delivered at let collect sample from
-                the victory of the managements that supplies best design system
-                which guidelines ever with multiple features.
+                darkslide skate or die 720 pop shove-it nose noseblunt slide
+                roll-in. Indy grab heel flip Wes Humpston kickturn steps
+                noseblunt slide backside frontside air. Casper slide noseblunt
+                slide ho-ho soul skate rip grip wax grab. Indy grab varial 540
+                airwalk skate or die steps salad grind. Transfer rad pivot
+                noseblunt slide chicken wing fast plant hardware. Rail slide
+                varial lipslide hang up bone air tail coffin. Axle Willy Santos
+                backside quarter pipe street fastplant 900 shinner. Lipslide
+                Japan air nose slide mongo feeble crooked grind skate or die.
+                Hurricane Jason Wilson wheels coping nose slide nose bump
+                darkslide bail.
             </div>
         ),
     },
     {
-        title: 'App installation failed, how to update system information?',
+        title: 'Rock and roll bluntslide axle set dude carve fakie out chicken wing?',
         contents: (
             <div>
-                Rhino skin maybe thick but it can be quite sensitive to sunburns
-                and insect bites which is why they like wallow so much – when
-                the mud dries it acts as protection from the sunburns and
-                insects.
+                Rocket air casper slide pop shove-it nosegrind nosebone pressure
+                flip lipslide. Fast plant lien air smith grind hang up lipslide
+                wheels Steve Rocco half-cab. Skate key bluntslide Tracker frigid
+                air noseblunt slide cab flip Jimmy'Z spine. Soul skate cess
+                slide Bucky Lasek roll-in gnarly bigspin bone air spine.
             </div>
         ),
     },
     {
-        title: `Website response taking time, how to improve?`,
+        title: `Gap full-cab ollie north pressure flip air dude handplant.?`,
         contents: (
             <div>
-                Get your blood tests delivered at the home collect a sample from
-                management news. Get your blood tests delivered at the home
-                collect a sample from management news. Get your blood tests
-                delivered at the home collect a sample from management news. Get
-                your blood tests delivered at the home.
+                Lip lipslide sketchy frigid air nose-bump Brooklyn Banks hard
+                flip pogo. Kevin Harris layback rail downhill tic-tac crail
+                slide switch. Shinner deck frigid air fast plant ho-ho casper
+                Duel at Diablo Kevin Harris. Boardslide ollie north crailtap Old
+                Ghosts fakie out ledge invert rocket air. Tom Knox rails
+                nosebone noseblunt slide 1080 body varial helipop tailslide.
             </div>
         ),
     },
     {
-        title: `New update fixed all bug and issues`,
+        title: `Nose grab grab crooked grind risers crail grab baseplate Kevin Harris?`,
         contents: (
             <div>
-                If you’re looking to hunt a unicorn, but don’t know where to
-                begin, try Lake Superior State University in Sault Ste. Marie,
-                Michigan. Since 1971, the university has issued permits to
-                unicorn questers.
+                Deck rails bruised heel chicken wing hard flip hardware Kevin
+                Harris Julien Stranger. Nose grab tailslide rail hard flip camel
+                back boned out full pipe. Sketchy air no comply steps sick
+                varial coping. Griptape Steve Severin 720 bail hand rail flail
+                baseplate egg plant. Hang ten varial mini ramp coffin nollie
+                drop in spine.
             </div>
         ),
     },

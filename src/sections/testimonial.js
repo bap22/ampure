@@ -79,7 +79,7 @@ export default function TestimonialCard() {
             <Container>
                 <SectionHeader
                     slogan="Testimonial"
-                    title="Meet Client Satisfaction"
+                    title="Dentists love the results"
                 />
             </Container>
             <Box sx={styles.carouselWrapper}>

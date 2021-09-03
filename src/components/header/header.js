@@ -30,24 +30,31 @@ export default function Header({ className }) {
 
                     <Flex as="nav" sx={styles.nav}>
                         {/* TODO: use this if on homepage, else use Link */}
-                        {router?.pathname == '/' ? (
-                            menuItems.map(({ path, label }, i) => (
-                                <ScrollLink
-                                    activeClass="active"
-                                    to={path}
-                                    spy={true}
-                                    smooth={true}
-                                    offset={-70}
-                                    duration={500}
-                                    key={i}
-                                >
-                                    {label}
-                                </ScrollLink>
-                            ))
-                        ) : (
-                            <Link href="/">Home</Link>
-                        )}
-                        <a
+                        {router?.pathname == '/'
+                            ? menuItems.map(({ path, label }, i) => (
+                                  <ScrollLink
+                                      activeClass="active"
+                                      to={path}
+                                      spy={true}
+                                      smooth={true}
+                                      offset={-70}
+                                      duration={500}
+                                      key={i}
+                                  >
+                                      {label}
+                                  </ScrollLink>
+                              ))
+                            : menuItems.map(({ path, label }, j) => (
+                                  <a
+                                      activeClass="active"
+                                      href={`/#${path}`}
+                                      key={j}
+                                  >
+                                      {label}
+                                  </a>
+                              ))}
+                        {/* TODO: footer only links? */}
+                        {/* <a
                             href="/about"
                             className={
                                 router?.pathname == '/about' ? 'active' : ''
@@ -62,7 +69,7 @@ export default function Header({ className }) {
                             }
                         >
                             Contact
-                        </a>
+                        </a> */}
                     </Flex>
 
                     <Button

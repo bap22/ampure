@@ -5,10 +5,10 @@ import TextFeature from 'components/text-feature';
 import Image from 'next/image';
 
 const data = {
-    subTitle: 'Core features',
-    title: 'Smart Jackpots that you may love this anytime & anywhere',
+    subTitle: 'Localization',
+    title: 'Smart optimization and reporting for your locale',
     description:
-        'Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever. Get your tests delivered at let home collect sample.',
+        'Ampure is your all-in-one solution for hands off SEO and online optimization. Get more patients each and every month.',
     btnName: 'Get Started',
     btnURL: '#',
 };

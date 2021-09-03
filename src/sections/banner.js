@@ -47,11 +47,11 @@ export default function Banner(props) {
             <Container sx={styles.banner.container}>
                 <Box sx={styles.banner.contentBox}>
                     <Heading as="h1" variant="heroPrimary">
-                        {props?.content?.content.replace(/<[^>]*>?/gm, '')}
+                        {props?.h1}
                     </Heading>
                     <Text as="p" variant="heroSecondary">
-                        Ampure is your all-in-one marketing hub to help you
-                        simplify and grow your practice.
+                        {props?.content}
+                        {/* {props?.content?.replace(/<[^>]*>?/gm, '')} */}
                     </Text>
                     <Flex>
                         <Link href="#feature">

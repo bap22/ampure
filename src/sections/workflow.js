@@ -7,23 +7,23 @@ import SectionHeader from 'components/section-header';
 const data = [
     {
         id: 1,
-        title: 'Set disbursement Instructions',
-        text: 'Get your blood tests delivered at home collect a sample from the your blood tests.',
+        title: 'Expertise',
+        text: 'Marketing, SEO, and programming experts, no interns or beginners here!',
     },
     {
         id: 2,
-        title: 'Assembly retrieves funds from your account',
-        text: 'Get your blood tests delivered at home collect a sample from the your blood tests.',
+        title: 'Industry knowledge',
+        text: 'We have been working in the Dental Industry for a long, long time.',
     },
     {
         id: 3,
-        title: 'Assembly initiates disbursement',
-        text: 'Get your blood tests delivered at home collect a sample from the your blood tests.',
+        title: 'Transparency',
+        text: 'You can check your real time reports and results at any time along with access to an account manager.',
     },
     {
         id: 4,
-        title: 'Customer receives funds payment',
-        text: 'Get your blood tests delivered at home collect a sample from the your blood tests.',
+        title: 'No Contracts',
+        text: 'We are so confident youll love the results that we make it easy to cancel at any time for any reason.',
     },
 ];
 

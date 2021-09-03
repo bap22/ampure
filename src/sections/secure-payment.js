@@ -6,10 +6,10 @@ import TextFeature from 'components/text-feature';
 import Image from 'next/image';
 
 const data = {
-    subTitle: 'PAYMENT SECURITY',
-    title: 'Secure Payment Transaction System with #1 Ranking',
+    subTitle: 'WEBSITE SECURITY',
+    title: 'Stop worrying about keeping your site updated and patched. We got this.',
     description:
-        'Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever. Get your tests delivered at let home collect sample.',
+        'Just like you want the most secure systems when dealing with your financial informatino, you want a website that is secure. We mitigate hacking attempts and make your information is secured and private.',
     btnName: 'Learn More',
     btnURL: '#',
 };

@@ -10,43 +10,43 @@ const data = [
         id: 1,
         imgSrc: '/assets/feature/smart.svg',
         altText: 'Smart',
-        title: 'Smart Features',
-        text: 'Get your blood tests delivered at let home collect sample from the victory of the managements.',
+        title: 'Smart Optimization',
+        text: 'Boneless kidney bearings goofy footed freestyle hang-up nose-bump Tom Knox. Face plant nose Tracker axle set hang up rails betty. Boneless Saran Wrap concave kickflip gap coffin bail. Supersonic Skate Camp kidney wheels spine rocket air street bearings snake.',
     },
     {
         id: 2,
         imgSrc: '/assets/feature/winner.svg',
         altText: 'Performance',
-        title: 'Fast Performance',
-        text: 'Get your blood tests delivered at let home collect sample from the victory of the managements.',
+        title: 'Amazing Performance',
+        text: 'Boneless kidney bearings goofy footed freestyle hang-up nose-bump Tom Knox. Face plant nose Tracker axle set hang up rails betty. Boneless Saran Wrap concave kickflip gap coffin bail. Supersonic Skate Camp kidney wheels spine rocket air street bearings snake.',
     },
     {
         id: 3,
         imgSrc: '/assets/feature/cloud.svg',
         altText: 'Content',
-        title: 'Unlimited Content',
-        text: 'Get your blood tests delivered at let home collect sample from the victory of the managements.',
+        title: 'Fresh Content',
+        text: 'Boneless kidney bearings goofy footed freestyle hang-up nose-bump Tom Knox. Face plant nose Tracker axle set hang up rails betty. Boneless Saran Wrap concave kickflip gap coffin bail. Supersonic Skate Camp kidney wheels spine rocket air street bearings snake.',
     },
     {
         id: 4,
         imgSrc: '/assets/feature/setting.svg',
         altText: 'Customization',
-        title: 'Unlimited Customization',
-        text: 'Get your blood tests delivered at let home collect sample from the victory of the managements.',
+        title: 'Customization',
+        text: 'Boneless kidney bearings goofy footed freestyle hang-up nose-bump Tom Knox. Face plant nose Tracker axle set hang up rails betty. Boneless Saran Wrap concave kickflip gap coffin bail. Supersonic Skate Camp kidney wheels spine rocket air street bearings snake.',
     },
     {
         id: 5,
         imgSrc: '/assets/feature/design.svg',
         altText: 'Productivity',
-        title: 'Boost Productivity',
-        text: 'Get your blood tests delivered at let home collect sample from the victory of the managements.',
+        title: 'More Clients',
+        text: 'Boneless kidney bearings goofy footed freestyle hang-up nose-bump Tom Knox. Face plant nose Tracker axle set hang up rails betty. Boneless Saran Wrap concave kickflip gap coffin bail. Supersonic Skate Camp kidney wheels spine rocket air street bearings snake.',
     },
     {
         id: 6,
         imgSrc: '/assets/feature/chat.svg',
         altText: 'Support',
         title: 'Customer Support',
-        text: 'Get your blood tests delivered at let home collect sample from the victory of the managements.',
+        text: 'Boneless kidney bearings goofy footed freestyle hang-up nose-bump Tom Knox. Face plant nose Tracker axle set hang up rails betty. Boneless Saran Wrap concave kickflip gap coffin bail. Supersonic Skate Camp kidney wheels spine rocket air street bearings snake.',
     },
 ];
 
@@ -55,8 +55,8 @@ export default function Feature() {
         <section sx={{ variant: 'section.feature' }}>
             <Container>
                 <SectionHeader
-                    slogan="Quality features"
-                    title="Meet exciting feature of app"
+                    slogan="Why build a site with Ampure?"
+                    title="High quality, performant, websites"
                 />
 
                 <Grid sx={styles.grid}>

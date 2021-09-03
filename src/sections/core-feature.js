@@ -24,7 +24,7 @@ const data = {
             text: 'Rather than getting random ranking reports and “vanity” metrics about how many likes you have on Facebook - Ampure is dedicated to providing you data and analytics in a consumable format that will actually help you make better marketing decisions. Our data shows what is working and how it is impacting the number of new patients you’re getting every single day.',
         },
         {
-            id: 2,
+            id: 3,
             imgSrc: '/assets/core-feature/secure.svg',
             altText: 'Contracts',
             title: 'No Long-term Contracts',

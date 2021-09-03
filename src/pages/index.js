@@ -16,18 +16,21 @@ import SecurePayment from 'sections/secure-payment';
 import { getPage } from '../lib/api';
 
 const IndexPage = ({ bannerData }) => {
+    console.warn(bannerData);
     return (
         <ThemeProvider theme={theme}>
             <StickyProvider>
                 <Layout>
                     <SEO title="Ampure. Pure SEO for Dental Practices" />
-                    <Banner content={bannerData} />
-                    <KeyFeature />
+                    <Banner
+                        h1={bannerData?.customFields?.h1}
+                        content={bannerData?.customFields?.headerContent}
+                    />
+                    <KeyFeature
+                        content={bannerData?.customFields?.keyFeatures}
+                    />
                     <CoreFeature />
-                    <Feature />
-                    <PartnerSection />
                     <TestimonialCard />
-                    <SecurePayment />
                 </Layout>
             </StickyProvider>
         </ThemeProvider>
