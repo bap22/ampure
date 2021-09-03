@@ -78,7 +78,7 @@ export default function TestimonialCard() {
         <section id="testimonial" sx={{ variant: 'section.testimonial' }}>
             <Container>
                 <SectionHeader
-                    slogan="Testimonial"
+                    slogan="Testimonials"
                     title="Dentists love the results"
                 />
             </Container>
