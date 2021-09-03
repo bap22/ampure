@@ -576,6 +576,56 @@ export async function getPage(slug, optionalId = null) {
 		    slug
 		    status
 		    title
+			customFields {
+		      fieldGroupName
+		      h1
+		      headerContent
+		      keyFeatures {
+		        content
+		        fieldGroupName
+		        title
+		        icon {
+		          altText
+		          mediaDetails {
+		            file
+		            height
+		            width
+		          }
+		          mediaItemUrl
+		          sourceUrl
+		          title
+		        }
+		      }
+		    }
+			seo {
+		      title
+		      canonical
+		      metaDesc
+		      metaKeywords
+		      metaRobotsNofollow
+		      metaRobotsNoindex
+		      opengraphAuthor
+		      opengraphDescription
+		      opengraphModifiedTime
+		      opengraphPublishedTime
+		      opengraphPublisher
+		      opengraphSiteName
+		      opengraphTitle
+		      opengraphType
+		      opengraphUrl
+		      schema {
+		        articleType
+		        pageType
+		        raw
+		      }
+		      twitterDescription
+		      twitterImage {
+		        mediaDetails {
+		          file
+		        }
+		        title
+		      }
+		    }
 			}
 		}
 	`
