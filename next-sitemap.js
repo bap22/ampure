@@ -1,5 +1,5 @@
 module.exports = {
-    siteUrl: 'https://ampure.vercel.app',
+    siteUrl: 'https://ampure.site',
     generateRobotsTxt: true,
     // optional
     // robotsTxtOptions: {
