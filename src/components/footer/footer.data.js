@@ -15,8 +15,12 @@ export default [
                 label: 'Contact Us',
             },
             {
-                path: '/terms',
-                label: 'Privacy and Terms',
+                path: '/privacy-policy',
+                label: 'Privacy Policy',
+            },
+            {
+                path: '/terms-of-service',
+                label: 'Terms of Service',
             },
         ],
     },
